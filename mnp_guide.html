@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>【2026年版】MNPで稼ぐ具体的な手順｜完全ガイド</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Bebas+Neue&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --blue: #185FA5;
+  --blue-dark: #0C447C;
+  --blue-light: rgba(24,95,165,0.08);
+  --blue-border: rgba(24,95,165,0.2);
+  --amber: #E8A020;
+  --green: #3B6D11;
+  --green-light: rgba(59,109,17,0.08);
+  --green-border: rgba(59,109,17,0.2);
+  --red: #D83C28;
+  --dark: #0a0a0f;
+  --text: #1a1a1a;
+  --text-muted: #555;
+  --bg: #f5f4f0;
+  --surface: #fff;
+  --border: rgba(0,0,0,0.08);
+}
+
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.85;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: var(--dark);
+  padding: 4rem 2rem 3rem;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -80px; right: -80px;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(24,95,165,0.2) 0%, transparent 65%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -60px; left: -40px;
+  width: 280px; height: 280px;
+  background: radial-gradient(circle, rgba(232,160,32,0.12) 0%, transparent 65%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.hero-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.hero-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--amber);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.hero-eyebrow::before {
+  content: '';
+  display: inline-block;
+  width: 24px; height: 2px;
+  background: var(--amber);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: clamp(1.6rem, 4vw, 2.3rem);
+  color: #fff;
+  line-height: 1.35;
+  margin-bottom: 1.25rem;
+}
+.hero-title .accent { color: var(--amber); }
+.hero-sub {
+  font-size: 14px;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+  letter-spacing: 0.05em;
+}
+.badge-blue { background: rgba(24,95,165,0.25); color: #85B7EB; border: 1px solid rgba(24,95,165,0.4); }
+.badge-amber { background: rgba(232,160,32,0.15); color: #FAC775; border: 1px solid rgba(232,160,32,0.3); }
+.badge-green { background: rgba(59,109,17,0.2); color: #C0DD97; border: 1px solid rgba(59,109,17,0.35); }
+
+/* ===== WRAPPER ===== */
+.wrapper {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 5rem;
+}
+
+p { margin-bottom: 1rem; color: var(--text); }
+
+/* ===== OVERVIEW CARDS ===== */
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+.overview-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.25rem;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+}
+.overview-num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.2rem;
+  color: var(--blue);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.overview-num .unit { font-size: 1rem; color: var(--text-muted); font-family: 'Noto Sans JP', sans-serif; font-weight: 400; }
+.overview-label {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* ===== SECTION ===== */
+.section { margin-bottom: 3.5rem; }
+
+.section-header {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 1.5rem;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--border);
+}
+.section-num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3rem;
+  color: var(--blue);
+  line-height: 1;
+}
+.section-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.3;
+}
+
+/* ===== STEP ===== */
+.steps { display: flex; flex-direction: column; gap: 0; }
+.step {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 0 1.25rem;
+  position: relative;
+}
+.step:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 27px;
+  top: 56px;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--blue-border), transparent);
+}
+.step-left { display: flex; flex-direction: column; align-items: center; padding-top: 8px; }
+.step-circle {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: var(--blue);
+  color: #fff;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+.step-right {
+  padding-bottom: 2rem;
+}
+.step-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+  margin-top: 6px;
+}
+.step-body {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-bottom: 0.75rem;
+}
+
+/* ===== INFO BOX ===== */
+.info-box {
+  background: var(--blue-light);
+  border: 1px solid var(--blue-border);
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  font-size: 13px;
+  color: var(--text);
+  line-height: 1.7;
+}
+.info-box strong { color: var(--blue-dark); }
+
+.tip-box {
+  background: rgba(232,160,32,0.08);
+  border: 1px solid rgba(232,160,32,0.25);
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  font-size: 13px;
+  color: var(--text);
+  line-height: 1.7;
+  margin-top: 0.75rem;
+}
+.tip-box .tip-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--amber);
+  letter-spacing: 0.1em;
+  margin-bottom: 4px;
+}
+.tip-box strong { color: #B87800; }
+
+.warn-box {
+  background: rgba(216,60,40,0.06);
+  border: 1px solid rgba(216,60,40,0.2);
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  font-size: 13px;
+  color: var(--text);
+  line-height: 1.7;
+  margin-top: 0.75rem;
+}
+.warn-box .warn-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--red);
+  letter-spacing: 0.1em;
+  margin-bottom: 4px;
+}
+
+/* ===== PROFIT SIM ===== */
+.sim-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  margin: 1rem 0;
+  background: var(--surface);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+.sim-table th {
+  background: var(--dark);
+  color: rgba(255,255,255,0.8);
+  font-weight: 700;
+  font-size: 12px;
+  padding: 10px 14px;
+  text-align: left;
+  letter-spacing: 0.05em;
+}
+.sim-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+}
+.sim-table tr:last-child td { border-bottom: none; }
+.sim-table tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.sim-table .profit { color: var(--green); font-weight: 700; }
+.sim-table .total-row td {
+  background: var(--blue-light);
+  font-weight: 700;
+  color: var(--blue-dark);
+  border-top: 2px solid var(--blue-border);
+}
+
+/* ===== CHECKLIST ===== */
+.checklist {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 1rem 0;
+}
+.checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--text);
+  line-height: 1.6;
+}
+.checklist li::before {
+  content: '✓';
+  font-weight: 700;
+  color: var(--blue);
+  flex-shrink: 0;
+  margin-top: 1px;
+  font-size: 14px;
+}
+
+/* ===== DIVIDER ===== */
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0,0,0,0.1), transparent);
+  margin: 3rem 0;
+}
+
+/* ===== CTA ===== */
+.cta-block {
+  background: var(--dark);
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.cta-block::before {
+  content: 'JOIN';
+  position: absolute;
+  top: 10px; right: 16px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 5rem;
+  color: rgba(255,255,255,0.03);
+  letter-spacing: 0.1em;
+  pointer-events: none;
+}
+.cta-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--amber);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.cta-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+.cta-sub {
+  font-size: 13px;
+  color: rgba(255,255,255,0.45);
+  margin-bottom: 1.75rem;
+  line-height: 1.7;
+}
+.cta-btn {
+  display: inline-block;
+  background: #06C755;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: opacity 0.2s;
+}
+.cta-btn:hover { opacity: 0.85; }
+.cta-note {
+  font-size: 12px;
+  color: rgba(255,255,255,0.25);
+  margin-top: 1rem;
+}
+
+/* ===== CARRIER TAGS ===== */
+.carrier-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0.75rem 0;
+}
+.carrier-tag {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1px solid var(--blue-border);
+  background: var(--blue-light);
+  color: var(--blue-dark);
+}
+
+@media (max-width: 600px) {
+  .hero { padding: 3rem 1.25rem 2.5rem; }
+  .overview-grid { grid-template-columns: 1fr 1fr; }
+  .wrapper { padding: 2rem 1.25rem 4rem; }
+  .step { grid-template-columns: 44px 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">完全攻略ガイド 2026年版</div>
+    <h1 class="hero-title">
+      MNPで稼ぐ<span class="accent">具体的な手順</span>を<br>
+      全部まとめた
+    </h1>
+    <p class="hero-sub">
+      キャリア乗り換えの仕組みを使って、一人でサクッと数万円を稼ぐ。<br>
+      eSIM対応で来店不要。再現性100%の完全マニュアル。
+    </p>
+    <div class="hero-badges">
+      <span class="badge badge-blue">個人完結</span>
+      <span class="badge badge-green">再現性100%</span>
+      <span class="badge badge-amber">2026年最新</span>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper">
+
+  <!-- OVERVIEW -->
+  <div class="overview-grid">
+    <div class="overview-card">
+      <div class="overview-num">1<span class="unit">回</span></div>
+      <div class="overview-label">数万円〜の<br>キャッシュバック</div>
+    </div>
+    <div class="overview-card">
+      <div class="overview-num">0<span class="unit">円</span></div>
+      <div class="overview-label">初期費用<br>ほぼゼロ</div>
+    </div>
+    <div class="overview-card">
+      <div class="overview-num">当日</div>
+      <div class="overview-label">eSIMで即開通<br>来店不要</div>
+    </div>
+  </div>
+
+  <!-- SECTION 01: 仕組み -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2 class="section-title">MNPで稼げる理由：仕組みを理解する</h2>
+    </div>
+    <p>キャリア各社は「他社から乗り換えてくれた人」に対して、大きなキャッシュバックや端末割引を提供している。これは新規顧客獲得コストを補填するためで、構造的に継続している仕組みだ。</p>
+    <p>MNP（モバイルナンバーポータビリティ）を使って<strong>キャリアを乗り換えるだけで</strong>、この恩恵を受け取ることができる。端末の転売益も加えると、1回の乗り換えで数万円の純利益が出るケースも珍しくない。</p>
+    <div class="info-box">
+      <strong>なぜキャリアはこんなにばらまくのか？</strong><br>
+      通信業界の顧客獲得コストは1人あたり数万円が相場。それを「キャッシュバック」という形で乗り換え者に還元しているだけ。キャリアにとっても計算済みのコストだ。
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SECTION 02: 収益シミュレーション -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2 class="section-title">収益シミュレーション：実際いくら稼げるか</h2>
+    </div>
+    <p>1回の乗り換えで発生するコストと収益の概算例。キャリア・時期・端末によって変動するため、あくまで参考値として見てほしい。</p>
+
+    <table class="sim-table">
+      <thead>
+        <tr>
+          <th>項目</th>
+          <th>内容</th>
+          <th>金額（概算）</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>キャッシュバック</td>
+          <td>乗り換え特典</td>
+          <td class="profit">＋10,000〜40,000円</td>
+        </tr>
+        <tr>
+          <td>端末値引き</td>
+          <td>一括購入時の割引</td>
+          <td class="profit">＋5,000〜30,000円</td>
+        </tr>
+        <tr>
+          <td>端末転売益</td>
+          <td>フリマ等での売却差益</td>
+          <td class="profit">＋5,000〜20,000円</td>
+        </tr>
+        <tr>
+          <td>事務手数料</td>
+          <td>MNP転出・契約費</td>
+          <td>－0〜3,300円</td>
+        </tr>
+        <tr>
+          <td>月額維持費</td>
+          <td>最低利用期間分</td>
+          <td>－3,000〜6,000円</td>
+        </tr>
+        <tr class="total-row">
+          <td colspan="2"><strong>純利益（概算）</strong></td>
+          <td><strong>1回あたり 2〜7万円程度</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="tip-box">
+      <div class="tip-label">💡 POINT</div>
+      複数回線・複数人で動けばさらに効率アップ。家族名義の回線を活用する上級者も多い。
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SECTION 03: 手順 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2 class="section-title">具体的な手順：STEP BY STEP</h2>
+    </div>
+
+    <div class="steps">
+
+      <div class="step">
+        <div class="step-left"><div class="step-circle">1</div></div>
+        <div class="step-right">
+          <div class="step-title">狙うキャリアと特典を調査する</div>
+          <div class="step-body">その時点でもっともキャッシュバックが大きいキャリア・プランを確認。公式サイトだけでなく、代理店経由の特典も合わせてチェックする。</div>
+          <div class="carrier-row">
+            <span class="carrier-tag">ドコモ</span>
+            <span class="carrier-tag">au</span>
+            <span class="carrier-tag">ソフトバンク</span>
+            <span class="carrier-tag">楽天モバイル</span>
+            <span class="carrier-tag">UQモバイル</span>
+            <span class="carrier-tag">Y!mobile</span>
+          </div>
+          <div class="tip-box">
+            <div class="tip-label">💡 POINT</div>
+            特典は時期によって大きく変動する。<strong>月末・四半期末が狙い目</strong>になりやすい。
+          </div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-left"><div class="step-circle">2</div></div>
+        <div class="step-right">
+          <div class="step-title">MNP予約番号を取得する</div>
+          <div class="step-body">現在契約しているキャリアのアプリ・マイページからMNP予約番号を発行する。最近はオンラインで即時発行できるキャリアが多い。有効期限は通常15日。</div>
+          <div class="info-box">
+            <strong>MNP予約番号の取り方（各キャリア共通）</strong><br>
+            マイページ → 各種手続き → MNP予約番号発行 → 番号をメモ
+          </div>
+          <div class="warn-box">
+            <div class="warn-label">⚠️ 注意</div>
+            転出元キャリアによっては手数料が発生する場合あり。事前に確認を。
+          </div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-left"><div class="step-circle">3</div></div>
+        <div class="step-right">
+          <div class="step-title">新キャリアで申し込む（eSIM推奨）</div>
+          <div class="step-body">取得したMNP予約番号を使って新キャリアで申し込み。eSIM対応なら来店不要・当日開通が可能。eKYC（オンライン本人確認）で完結する。</div>
+          <div class="tip-box">
+            <div class="tip-label">💡 eSIMのメリット</div>
+            <strong>来店不要・即日開通・物理SIM待ち時間ゼロ</strong>。スマホ操作だけで完結できるため、複数回線管理も効率的になる。
+          </div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-left"><div class="step-circle">4</div></div>
+        <div class="step-right">
+          <div class="step-title">キャッシュバック・特典を受け取る</div>
+          <div class="step-body">契約完了後、指定の手順でキャッシュバックを申請・受け取り。口座振込・PayPay・Amazonギフト券など形式はキャリアによって異なる。</div>
+          <div class="warn-box">
+            <div class="warn-label">⚠️ 見落としやすいポイント</div>
+            キャッシュバックには「申請期限」があるケースが多い。契約後すぐに確認して忘れずに申請すること。
+          </div>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-left"><div class="step-circle">5</div></div>
+        <div class="step-right">
+          <div class="step-title">最低利用期間を確認して解約・次へ</div>
+          <div class="step-body">多くのプランは最低利用期間が1〜2ヶ月程度。その期間が過ぎたら解約または再度MNPして次のキャリアへ。この繰り返しが「MNP収益化」の基本サイクルだ。</div>
+          <div class="info-box">
+            <strong>スプレッドシートで管理するのが鉄則</strong><br>
+            契約日・解約可能日・キャッシュバック申請期限・受け取り確認 ── これを回線ごとに記録しておくと抜け漏れゼロで運用できる。
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SECTION 04: よくある失敗 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2 class="section-title">やりがちな失敗と対策</h2>
+    </div>
+
+    <ul class="checklist">
+      <li>キャッシュバックの申請期限を忘れて受け取り損ねる → <strong>契約当日にカレンダー登録</strong></li>
+      <li>最低利用期間中に解約して違約金が発生する → <strong>解約可能日をスプシに必ず記録</strong></li>
+      <li>端末の分割払いが残ったまま乗り換えようとする → <strong>一括払いか残債確認を先にやる</strong></li>
+      <li>MNP予約番号の有効期限が切れる → <strong>取得後すぐに申し込む（15日以内）</strong></li>
+      <li>特典条件をよく読まずに申し込んで対象外になる → <strong>公式の注意事項を必ず確認</strong></li>
+    </ul>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-block">
+    <div class="cta-label">JOIN THE COMMUNITY</div>
+    <div class="cta-title">
+      最新の特典情報・稼ぎやすいタイミング<br>
+      はコミュニティで随時共有中
+    </div>
+    <div class="cta-sub">
+      キャリアの特典は時期によって大きく変わる。<br>
+      旬の情報をいち早くキャッチして動くのが、MNPで稼ぐ最大のコツ。
+    </div>
+    <a href="https://lin.ee/AsTWK4D" target="_blank" class="cta-btn">
+      📲 LINEオープンチャットに参加する
+    </a>
+    <div class="cta-note">参加無料 · いつでも退会できます</div>
+  </div>
+
+</div>
+</body>
+</html>
